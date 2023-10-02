@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "more_layered_blocks",
+	"version": "${version}",
+	"name": "more_layered_blocks",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/more_layered_blocks/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"ugi.more_layered_blocks.MoreLayeredBlocks"
+		],
+		"client": [
+			"ugi.more_layered_blocks.More_layered_blocksClient"
+		],
+		"fabric-datagen": [
+			"ugi.more_layered_blocks.More_layered_blocksDataGenerator"
+		]
+	},
+	"mixins": [
+		"more_layered_blocks.mixins.json",
+		{
+			"config": "more_layered_blocks.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
