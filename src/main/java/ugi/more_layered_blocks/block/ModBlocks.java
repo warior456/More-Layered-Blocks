@@ -18,13 +18,19 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import ugi.more_layered_blocks.MoreLayeredBlocks;
+import ugi.more_layered_blocks.block.layeredblocks.LayeredDirtBlock;
 import ugi.more_layered_blocks.block.layeredblocks.LayeredSandBlock;
 import ugi.more_layered_blocks.item.ModItemGroup;
 
 public class ModBlocks {
 
     public static final Block LAYERED_SAND = registerBlock("layered_sand",
-            new LayeredSandBlock(FabricBlockSettings.create().mapColor(MapColor.PALE_YELLOW).replaceable().instrument(Instrument.SNARE).strength(0.5F).sounds(BlockSoundGroup.SAND).notSolid().ticksRandomly()
+            new LayeredSandBlock(FabricBlockSettings.create().mapColor(MapColor.PALE_YELLOW).instrument(Instrument.SNARE).strength(0.5F).sounds(BlockSoundGroup.SAND).notSolid().ticksRandomly()
+                    .blockVision((state, world, pos) -> {return (Integer)state.get(SnowBlock.LAYERS) >= 8;})
+                    .pistonBehavior(PistonBehavior.DESTROY)), ModItemGroup.MORE_LAYERED_BLOCKS);
+
+    public static final Block LAYERED_DIRT = registerBlock("layered_dirt",
+            new LayeredDirtBlock(FabricBlockSettings.create().mapColor(MapColor.DIRT_BROWN).strength(0.5F).sounds(BlockSoundGroup.GRAVEL).notSolid().ticksRandomly()
                     .blockVision((state, world, pos) -> {return (Integer)state.get(SnowBlock.LAYERS) >= 8;})
                     .pistonBehavior(PistonBehavior.DESTROY)), ModItemGroup.MORE_LAYERED_BLOCKS);
 

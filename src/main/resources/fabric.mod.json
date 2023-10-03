@@ -19,10 +19,10 @@
 			"ugi.more_layered_blocks.MoreLayeredBlocks"
 		],
 		"client": [
-			"ugi.more_layered_blocks.More_layered_blocksClient"
+			"ugi.more_layered_blocks.MoreLayeredBlocksClient"
 		],
 		"fabric-datagen": [
-			"ugi.more_layered_blocks.More_layered_blocksDataGenerator"
+			"ugi.more_layered_blocks.MoreLayeredBlocksDataGenerator"
 		]
 	},
 	"mixins": [

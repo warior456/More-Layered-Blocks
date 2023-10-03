@@ -12,10 +12,10 @@ import net.minecraft.util.math.random.Random;
 import net.minecraft.world.WorldView;
 import org.jetbrains.annotations.Nullable;
 
-public class LayeredSandBlock extends SnowBlock {
-    public LayeredSandBlock(Settings settings) {
+public class LayeredDirtBlock extends SnowBlock {
+    public LayeredDirtBlock(Settings settings) {
         super(settings);
-        this.setDefaultState((this.stateManager.getDefaultState()).with(LAYERS, 1));
+        this.setDefaultState((this.stateManager.getDefaultState()).with(LAYERS, 2));
     }
 
     @Override
@@ -33,7 +33,7 @@ public class LayeredSandBlock extends SnowBlock {
     @Override
     public boolean canReplace(BlockState state, ItemPlacementContext context) {
         int i = state.get(LAYERS);
-        if (context.getStack().isOf(this.asItem()) && i < 8) {
+        if (context.getStack().isOf(this.asItem()) && i < 7) {
             if (context.canReplaceExisting()) {
                 return context.getSide() == Direction.UP;
             } else {
@@ -50,7 +50,7 @@ public class LayeredSandBlock extends SnowBlock {
         BlockState blockState = ctx.getWorld().getBlockState(ctx.getBlockPos());
         if (blockState.isOf(this)) {
             int i = blockState.get(LAYERS);
-            return blockState.with(LAYERS, Math.min(8, i + 1));
+            return blockState.with(LAYERS, Math.min(8, i + 2));
         } else {
             return super.getPlacementState(ctx);
         }
