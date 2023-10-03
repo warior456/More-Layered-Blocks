@@ -14,8 +14,13 @@ public class ModItems {
     public static final Item SAND_PILE = registerItem("sand_pile",
             new Item(new FabricItemSettings()));
 
+    public static final Item GRAVEL_PILE = registerItem("gravel_pile",
+            new Item(new FabricItemSettings()));
+
     public static final Item DIRT_PILE = registerItem("dirt_pile",
             new Item(new FabricItemSettings()));
+
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(MoreLayeredBlocks.MOD_ID, name), item);
     }
@@ -23,6 +28,7 @@ public class ModItems {
 
     public static void addItemsToItemGroup() {
         addToItemGroup(ModItemGroup.MORE_LAYERED_BLOCKS, SAND_PILE);
+        addToItemGroup(ModItemGroup.MORE_LAYERED_BLOCKS, GRAVEL_PILE);
         addToItemGroup(ModItemGroup.MORE_LAYERED_BLOCKS, DIRT_PILE);
     }
 
