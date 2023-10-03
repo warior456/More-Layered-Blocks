@@ -20,7 +20,7 @@ public class ModItemGroup {
 
         Registry.register(Registries.ITEM_GROUP, MORE_LAYERED_BLOCKS, FabricItemGroup.builder()
                 .icon(() -> new ItemStack(ModBlocks.LAYERED_SAND))
-                .displayName(Text.translatable("itemgroup.layered_sand"))
+                .displayName(Text.translatable("itemgroup.more_layered_blocks"))
                 .build());
     }
 }

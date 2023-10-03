@@ -1,4 +1,8 @@
 {
-  "t": "tt",
-  "tt": "t"
+  "block.more_layered_blocks.layered_sand": "Layered Sand",
+  "block.more_layered_blocks.layered_dirt": "Layered Dirt",
+
+  "item.more_layered_blocks.sand_pile": "Sand Pile",
+  "item.more_layered_blocks.dirt_pile": "Dirt Pile",
+  "itemgroup.more_layered_blocks": "More Layered Blocks"
 }
