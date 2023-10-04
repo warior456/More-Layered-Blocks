@@ -2,6 +2,7 @@ package ugi.more_layered_blocks;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
+import ugi.more_layered_blocks.datagen.ModLootTableProvider;
 import ugi.more_layered_blocks.datagen.ModModelProvider;
 import ugi.more_layered_blocks.datagen.ModRecipeProvider;
 
@@ -11,5 +12,6 @@ public class MoreLayeredBlocksDataGenerator implements DataGeneratorEntrypoint {
 		FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
 		pack.addProvider(ModModelProvider::new);
 		pack.addProvider(ModRecipeProvider::new);
+		pack.addProvider(ModLootTableProvider::new);
 	}
 }
