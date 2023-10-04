@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "more_layered_blocks:sand_pile"
+    }
+  },
+  "pattern": [
+    "###"
+  ],
+  "result": {
+    "count": 2,
+    "item": "more_layered_blocks:layered_sand"
+  },
+  "show_notification": true
+}

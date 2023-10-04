@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "more_layered_blocks:dirt_pile"
+    }
+  },
+  "pattern": [
+    "###"
+  ],
+  "result": {
+    "item": "more_layered_blocks:layered_dirt"
+  },
+  "show_notification": true
+}

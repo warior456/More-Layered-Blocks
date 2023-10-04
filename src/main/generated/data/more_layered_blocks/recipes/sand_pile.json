@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:sand"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "more_layered_blocks:sand_pile"
+  }
+}

@@ -1,8 +1,10 @@
 {
   "block.more_layered_blocks.layered_sand": "Layered Sand",
   "block.more_layered_blocks.layered_dirt": "Layered Dirt",
+  "block.more_layered_blocks.layered_gravel": "Layered Gravel",
 
   "item.more_layered_blocks.sand_pile": "Sand Pile",
   "item.more_layered_blocks.dirt_pile": "Dirt Pile",
+  "item.more_layered_blocks.gravel_pile": "Gravel Pile",
   "itemgroup.more_layered_blocks": "More Layered Blocks"
 }
