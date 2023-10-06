@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "more_layered_blocks:layered_sand",
+    "more_layered_blocks:layered_gravel",
+    "more_layered_blocks:layered_dirt"
+
+  ]
+}
