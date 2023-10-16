@@ -42,18 +42,30 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.GRAVEL_PILE), conditionsFromItem(ModItems.GRAVEL_PILE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.LAYERED_GRAVEL) + "_from_pile"));
 
-        //test
+        //snowlike
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LAYERED_DIRT.asItem(), 9)
                 .pattern("###")
                 .input('#', Blocks.DIRT)
                 .criterion(hasItem(Blocks.DIRT), conditionsFromItem(Blocks.DIRT))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.LAYERED_DIRT)));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LAYERED_GRASS_BLOCK.asItem(), 9)
+                .pattern("###")
+                .input('#', Blocks.GRASS_BLOCK)
+                .criterion(hasItem(Blocks.GRASS_BLOCK), conditionsFromItem(Blocks.GRASS_BLOCK))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.LAYERED_GRASS_BLOCK)));
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LAYERED_SAND.asItem(), 18)
                 .pattern("###")
                 .input('#', Blocks.SAND)
                 .criterion(hasItem(Blocks.SAND), conditionsFromItem(Blocks.SAND))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.LAYERED_SAND)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LAYERED_RED_SAND.asItem(), 18)
+                .pattern("###")
+                .input('#', Blocks.RED_SAND)
+                .criterion(hasItem(Blocks.RED_SAND), conditionsFromItem(Blocks.RED_SAND))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.LAYERED_RED_SAND)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LAYERED_GRAVEL.asItem(), 18)
                 .pattern("###")
