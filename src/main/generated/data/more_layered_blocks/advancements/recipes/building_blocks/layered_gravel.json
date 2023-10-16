@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_gravel_pile": {
+    "has_gravel": {
       "conditions": {
         "items": [
           {
             "items": [
-              "more_layered_blocks:gravel_pile"
+              "minecraft:gravel"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_gravel_pile",
+      "has_gravel",
       "has_the_recipe"
     ]
   ],

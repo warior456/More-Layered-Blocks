@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_sand_pile": {
+    "has_sand": {
       "conditions": {
         "items": [
           {
             "items": [
-              "more_layered_blocks:sand_pile"
+              "minecraft:sand"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_sand_pile",
+      "has_sand",
       "has_the_recipe"
     ]
   ],
