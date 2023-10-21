@@ -39,10 +39,10 @@ public class ModBlocks {
                     .blockVision((state, world, pos) -> {return (Integer)state.get(SnowBlock.LAYERS) >= 8;})
                     .pistonBehavior(PistonBehavior.DESTROY)), ModItemGroup.MORE_LAYERED_BLOCKS);
 
-    public static final Block LAYERED_GRASS_BLOCK = registerBlock("layered_grass_block",
+/*    public static final Block LAYERED_GRASS_BLOCK = registerBlock("layered_grass_block",
             new LayeredDirtBlock(FabricBlockSettings.create().mapColor(MapColor.PALE_GREEN).strength(0.6F).sounds(BlockSoundGroup.GRASS).notSolid().ticksRandomly()
                     .blockVision((state, world, pos) -> {return (Integer)state.get(SnowBlock.LAYERS) >= 8;})
-                    .pistonBehavior(PistonBehavior.DESTROY)), ModItemGroup.MORE_LAYERED_BLOCKS);
+                    .pistonBehavior(PistonBehavior.DESTROY)), ModItemGroup.MORE_LAYERED_BLOCKS);*/
 
     public static final Block LAYERED_DIRT = registerBlock("layered_dirt",
             new LayeredDirtBlock(FabricBlockSettings.create().mapColor(MapColor.DIRT_BROWN).strength(0.5F).sounds(BlockSoundGroup.GRAVEL).notSolid().ticksRandomly()

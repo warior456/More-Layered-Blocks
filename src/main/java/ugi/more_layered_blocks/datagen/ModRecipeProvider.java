@@ -49,11 +49,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Blocks.DIRT), conditionsFromItem(Blocks.DIRT))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.LAYERED_DIRT)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LAYERED_GRASS_BLOCK.asItem(), 9)
+/*        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LAYERED_GRASS_BLOCK.asItem(), 9)
                 .pattern("###")
                 .input('#', Blocks.GRASS_BLOCK)
                 .criterion(hasItem(Blocks.GRASS_BLOCK), conditionsFromItem(Blocks.GRASS_BLOCK))
-                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.LAYERED_GRASS_BLOCK)));
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.LAYERED_GRASS_BLOCK)));*/
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LAYERED_SAND.asItem(), 18)
                 .pattern("###")

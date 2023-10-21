@@ -1,18 +1,87 @@
 {
+    "parent": "minecraft:block/thin_block",
     "textures": {
-        "particle": "minecraft:block/grass_block",
-        "texture": "minecraft:block/grass_block"
+        "particle": "minecraft:block/grass_block_side",
+        "texture": "minecraft:block/grass_block_side",
+        "texture2": "minecraft:block/dirt",
+        "texture3": "minecraft:block/grass_block_top"
     },
     "elements": [
-        {   "from": [ 0, 0, 0 ],
-            "to": [ 16, 8, 16 ],
+        {
+            "from": [
+                0,
+                0,
+                0
+            ],
+            "to": [
+                16,
+                8,
+                16
+            ],
             "faces": {
-                "down":  { "uv": [ 0, 0, 16, 16 ], "texture": "#texture", "cullface": "down" },
-                "up":    { "uv": [ 0, 0, 16, 16 ], "texture": "#texture" },
-                "north": { "uv": [ 0, 8, 16, 16 ], "texture": "#texture", "cullface": "north" },
-                "south": { "uv": [ 0, 8, 16, 16 ], "texture": "#texture", "cullface": "south" },
-                "west":  { "uv": [ 0, 8, 16, 16 ], "texture": "#texture", "cullface": "west" },
-                "east":  { "uv": [ 0, 8, 16, 16 ], "texture": "#texture", "cullface": "east" }
+                "down": {
+                    "texture": "#texture2",
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ],
+                    "cullface": "down"
+                },
+                "up": {
+                    "texture": "#texture3",
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ]
+                },
+                "north": {
+                    "texture": "#texture",
+                    "uv": [
+                        0,
+                        7.9,
+                        16,
+                        0.1
+                    ],
+                    "cullface": "north",
+                    "rotation": 180
+                },
+                "south": {
+                    "texture": "#texture",
+                    "uv": [
+                        0,
+                        7.9,
+                        16,
+                        0.1
+                    ],
+                    "cullface": "south",
+                    "rotation": 180
+                },
+                "west": {
+                    "texture": "#texture",
+                    "uv": [
+                        0,
+                        7.9,
+                        16,
+                        0.1
+                    ],
+                    "cullface": "west",
+                    "rotation": 180
+                },
+                "east": {
+                    "texture": "#texture",
+                    "uv": [
+                        0,
+                        7.9,
+                        16,
+                        0.1
+                    ],
+                    "cullface": "east",
+                    "rotation": 180
+                }
             }
         }
     ]
