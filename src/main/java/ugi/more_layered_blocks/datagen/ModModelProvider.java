@@ -22,6 +22,7 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
 
         itemModelGenerator.register(ModItems.SAND_PILE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RED_SAND_PILE, Models.GENERATED);
         itemModelGenerator.register(ModItems.GRAVEL_PILE, Models.GENERATED);
         itemModelGenerator.register(ModItems.DIRT_PILE, Models.GENERATED);
     }

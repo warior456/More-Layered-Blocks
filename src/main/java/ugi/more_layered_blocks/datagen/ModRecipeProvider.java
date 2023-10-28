@@ -36,6 +36,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.SAND_PILE), conditionsFromItem(ModItems.SAND_PILE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.LAYERED_SAND) + "_from_pile"));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LAYERED_RED_SAND.asItem(), 2)
+                .pattern("###")
+                .input('#', ModItems.RED_SAND_PILE)
+                .criterion(hasItem(ModItems.RED_SAND_PILE), conditionsFromItem(ModItems.RED_SAND_PILE))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.LAYERED_RED_SAND) + "_from_pile"));
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LAYERED_GRAVEL.asItem(), 2)
                 .pattern("###")
                 .input('#', ModItems.GRAVEL_PILE)
@@ -75,6 +81,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.DIRT_PILE, RecipeCategory.BUILDING_BLOCKS, Blocks.DIRT);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.SAND_PILE, RecipeCategory.BUILDING_BLOCKS, Blocks.SAND);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.RED_SAND_PILE, RecipeCategory.BUILDING_BLOCKS, Blocks.RED_SAND);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.GRAVEL_PILE, RecipeCategory.BUILDING_BLOCKS, Blocks.GRAVEL);
     }
 }
