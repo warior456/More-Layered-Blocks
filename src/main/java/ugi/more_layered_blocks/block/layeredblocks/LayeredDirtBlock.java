@@ -21,8 +21,7 @@ public class LayeredDirtBlock extends SnowBlock {
 
     @Override
     public boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {
-        BlockState blockState = world.getBlockState(pos.down());
-        return Block.isFaceFullSquare(blockState.getCollisionShape(world, pos.down()), Direction.UP) || blockState.isOf(this) && blockState.get(LAYERS) == 8;
+        return true;
     }
 
     @Override
