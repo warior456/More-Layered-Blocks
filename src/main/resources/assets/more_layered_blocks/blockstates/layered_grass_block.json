@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "layers=1": {
+      "model": "more_layered_blocks:block/layered_grass_block_height2"
+    },
+    "layers=2": {
+      "model": "more_layered_blocks:block/layered_grass_block_height4"
+    },
+    "layers=3": {
+      "model": "more_layered_blocks:block/layered_grass_block_height6"
+    },
+    "layers=4": {
+      "model": "more_layered_blocks:block/layered_grass_block_height8"
+    },
+    "layers=5": {
+      "model": "more_layered_blocks:block/layered_grass_block_height10"
+    },
+    "layers=6": {
+      "model": "more_layered_blocks:block/layered_grass_block_height12"
+    },
+    "layers=7": {
+      "model": "more_layered_blocks:block/layered_grass_block_height14"
+    },
+    "layers=8": {
+      "model": "minecraft:block/grass_block"
+    }
+  }
+}

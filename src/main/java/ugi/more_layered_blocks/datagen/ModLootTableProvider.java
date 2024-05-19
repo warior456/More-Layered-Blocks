@@ -45,11 +45,27 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
             }))));
         });
 
+/*        addDrop(ModBlocks.LAYERED_GRASS_BLOCK, (block) -> {
+            return LootTable.builder().pool(LootPool.builder().conditionally(EntityPropertiesLootCondition.create(LootContext.EntityTarget.THIS)).with(AlternativeEntry.builder(AlternativeEntry.builder(LayeredDirtBlock.LAYERS.getValues(), (integer) -> {
+                return ((LeafEntry.Builder<?>) ItemEntry.builder(ModItems.DIRT_PILE).conditionally(BlockStatePropertyLootCondition.builder(block).properties(StatePredicate.Builder.create().exactMatch(LayeredDirtBlock.LAYERS, integer)))).apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create((float) integer + (float) integer /2)));
+            }).conditionally(WITHOUT_SILK_TOUCH), AlternativeEntry.builder(LayeredDirtBlock.LAYERS.getValues() , (integer) -> {
+                return ItemEntry.builder(ModBlocks.LAYERED_GRASS_BLOCK).apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create((float) integer/2 ))).conditionally(BlockStatePropertyLootCondition.builder(block).properties(StatePredicate.Builder.create().exactMatch(LayeredDirtBlock.LAYERS, integer )));
+            }))));
+        });*/
+
         addDrop(ModBlocks.LAYERED_SAND, (block) -> {
             return LootTable.builder().pool(LootPool.builder().conditionally(EntityPropertiesLootCondition.create(LootContext.EntityTarget.THIS)).with(AlternativeEntry.builder(AlternativeEntry.builder(LayeredSandBlock.LAYERS.getValues(), (integer) -> {
                 return ((LeafEntry.Builder<?>) ItemEntry.builder(ModItems.SAND_PILE).conditionally(BlockStatePropertyLootCondition.builder(block).properties(StatePredicate.Builder.create().exactMatch(LayeredSandBlock.LAYERS, integer)))).apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create((float) integer)));
             }).conditionally(WITHOUT_SILK_TOUCH), AlternativeEntry.builder(LayeredSandBlock.LAYERS.getValues() , (integer) -> {
                 return ItemEntry.builder(ModBlocks.LAYERED_SAND).apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create((float) integer ))).conditionally(BlockStatePropertyLootCondition.builder(block).properties(StatePredicate.Builder.create().exactMatch(LayeredSandBlock.LAYERS, integer )));
+            }))));
+        });
+
+        addDrop(ModBlocks.LAYERED_RED_SAND, (block) -> {
+            return LootTable.builder().pool(LootPool.builder().conditionally(EntityPropertiesLootCondition.create(LootContext.EntityTarget.THIS)).with(AlternativeEntry.builder(AlternativeEntry.builder(LayeredSandBlock.LAYERS.getValues(), (integer) -> {
+                return ((LeafEntry.Builder<?>) ItemEntry.builder(ModItems.RED_SAND_PILE).conditionally(BlockStatePropertyLootCondition.builder(block).properties(StatePredicate.Builder.create().exactMatch(LayeredSandBlock.LAYERS, integer)))).apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create((float) integer)));
+            }).conditionally(WITHOUT_SILK_TOUCH), AlternativeEntry.builder(LayeredSandBlock.LAYERS.getValues() , (integer) -> {
+                return ItemEntry.builder(ModBlocks.LAYERED_RED_SAND).apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create((float) integer ))).conditionally(BlockStatePropertyLootCondition.builder(block).properties(StatePredicate.Builder.create().exactMatch(LayeredSandBlock.LAYERS, integer )));
             }))));
         });
 

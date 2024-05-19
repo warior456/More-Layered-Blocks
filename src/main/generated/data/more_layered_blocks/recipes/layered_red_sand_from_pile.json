@@ -3,15 +3,15 @@
   "category": "building",
   "key": {
     "#": {
-      "item": "minecraft:dirt"
+      "item": "more_layered_blocks:red_sand_pile"
     }
   },
   "pattern": [
     "###"
   ],
   "result": {
-    "count": 9,
-    "item": "more_layered_blocks:layered_dirt"
+    "count": 2,
+    "item": "more_layered_blocks:layered_red_sand"
   },
   "show_notification": true
 }

@@ -3,14 +3,13 @@
   "category": "building",
   "key": {
     "#": {
-      "item": "minecraft:dirt"
+      "item": "more_layered_blocks:dirt_pile"
     }
   },
   "pattern": [
     "###"
   ],
   "result": {
-    "count": 9,
     "item": "more_layered_blocks:layered_dirt"
   },
   "show_notification": true

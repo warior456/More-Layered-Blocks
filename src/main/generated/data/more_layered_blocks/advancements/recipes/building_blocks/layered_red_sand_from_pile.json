@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_dirt": {
+    "has_red_sand_pile": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:dirt"
+              "more_layered_blocks:red_sand_pile"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:layered_dirt"
+        "recipe": "minecraft:layered_red_sand_from_pile"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_dirt",
+      "has_red_sand_pile",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:layered_dirt"
+      "minecraft:layered_red_sand_from_pile"
     ]
   },
   "sends_telemetry_event": false

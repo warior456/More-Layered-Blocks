@@ -1,0 +1,86 @@
+{
+  "parent": "minecraft:block/thin_block",
+  "textures": {
+    "particle": "minecraft:block/grass_block_side",
+    "texture": "minecraft:block/grass_block_side"
+  },
+  "elements": [
+    {
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        2,
+        16
+      ],
+      "faces": {
+        "down": {
+          "texture": "minecraft:block/dirt",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "cullface": "down"
+        },
+        "up": {
+          "texture": "minecraft:block/grass_block_top",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "north": {
+          "texture": "#texture",
+          "uv": [
+            0,
+            1.9,
+            16,
+            0.1
+          ],
+          "cullface": "north",
+          "rotation": 180
+        },
+        "south": {
+          "texture": "#texture",
+          "uv": [
+            0,
+            1.9,
+            16,
+            0.1
+          ],
+          "cullface": "south",
+          "rotation": 180
+        },
+        "west": {
+          "texture": "#texture",
+          "uv": [
+            0,
+            1.9,
+            16,
+            0.1
+          ],
+          "cullface": "west",
+          "rotation": 180
+        },
+        "east": {
+          "texture": "#texture",
+          "uv": [
+            0,
+            1.9,
+            16,
+            0.1
+          ],
+          "cullface": "east",
+          "rotation": 180
+        }
+      }
+    }
+  ]
+}
