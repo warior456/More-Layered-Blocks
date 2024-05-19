@@ -12,3 +12,7 @@ forge requires you to download [Sinatra Connector](https://modrinth.com/mod/conn
 
 ## Other
 Also check out [Sculk Depths](https://modrinth.com/mod/sculk-depths)
+
+## Need a Minecraft server?
+[![pebblehost](https://github.com/warior456/Sculk-Depths/assets/66562258/ae831af6-309b-4f11-b896-5f4eb7567088)](https://billing.pebblehost.com/aff.php?aff=2968)
+Starting at just 1$/month for 1GB RAM [Check it out](https://billing.pebblehost.com/aff.php?aff=2968)
