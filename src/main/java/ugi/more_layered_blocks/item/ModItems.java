@@ -1,6 +1,5 @@
 package ugi.more_layered_blocks.item;
 
-import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
@@ -12,16 +11,16 @@ import ugi.more_layered_blocks.MoreLayeredBlocks;
 public class ModItems {
 
     public static final Item SAND_PILE = registerItem("sand_pile",
-            new Item(new FabricItemSettings()));
+            new Item(new Item.Settings()));
 
     public static final Item RED_SAND_PILE = registerItem("red_sand_pile",
-            new Item(new FabricItemSettings()));
+            new Item(new Item.Settings()));
 
     public static final Item GRAVEL_PILE = registerItem("gravel_pile",
-            new Item(new FabricItemSettings()));
+            new Item(new Item.Settings()));
 
     public static final Item DIRT_PILE = registerItem("dirt_pile",
-            new Item(new FabricItemSettings()));
+            new Item(new Item.Settings()));
 
 
     private static Item registerItem(String name, Item item) {

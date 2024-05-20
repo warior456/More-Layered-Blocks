@@ -11,7 +11,6 @@
   ],
   "result": {
     "count": 18,
-    "item": "more_layered_blocks:layered_red_sand"
-  },
-  "show_notification": true
+    "id": "more_layered_blocks:layered_red_sand"
+  }
 }

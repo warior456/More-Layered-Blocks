@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "more_layered_blocks:gravel_pile"
-            ]
+            "items": "more_layered_blocks:gravel_pile"
           }
         ]
       },
@@ -22,14 +20,13 @@
   },
   "requirements": [
     [
-      "has_gravel_pile",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_gravel_pile"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:gravel"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

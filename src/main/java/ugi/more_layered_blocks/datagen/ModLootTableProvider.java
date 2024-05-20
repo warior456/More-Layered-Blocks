@@ -23,6 +23,7 @@ import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 import net.minecraft.predicate.StatePredicate;
+import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.state.property.Properties;
 import ugi.more_layered_blocks.block.ModBlocks;
 import ugi.more_layered_blocks.block.layeredblocks.LayeredDirtBlock;
@@ -30,9 +31,12 @@ import ugi.more_layered_blocks.block.layeredblocks.LayeredGravelBlock;
 import ugi.more_layered_blocks.block.layeredblocks.LayeredSandBlock;
 import ugi.more_layered_blocks.item.ModItems;
 
+import java.util.concurrent.CompletableFuture;
+
 public class ModLootTableProvider extends FabricBlockLootTableProvider {
-    public ModLootTableProvider(FabricDataOutput dataOutput) {
-        super(dataOutput);
+
+    public ModLootTableProvider(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
+        super(dataOutput, registryLookup);
     }
 
     @Override

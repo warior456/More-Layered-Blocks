@@ -1,6 +1,6 @@
 package ugi.more_layered_blocks.block;
 
-import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.AbstractBlock;
@@ -26,16 +26,16 @@ import ugi.more_layered_blocks.item.ModItemGroup;
 public class ModBlocks {
 
     public static final Block LAYERED_SAND = registerBlock("layered_sand",
-            new LayeredSandBlock(FabricBlockSettings.create().mapColor(MapColor.PALE_YELLOW).instrument(Instrument.SNARE).strength(0.5F).sounds(BlockSoundGroup.SAND).notSolid().ticksRandomly()
+            new LayeredSandBlock(AbstractBlock.Settings.create().mapColor(MapColor.PALE_YELLOW).instrument(Instrument.SNARE).strength(0.5F).sounds(BlockSoundGroup.SAND).notSolid().ticksRandomly()
                     .blockVision((state, world, pos) -> {return (Integer)state.get(SnowBlock.LAYERS) >= 8;})
                     .pistonBehavior(PistonBehavior.DESTROY)), ModItemGroup.MORE_LAYERED_BLOCKS);
 
     public static final Block LAYERED_RED_SAND = registerBlock("layered_red_sand",
-            new LayeredSandBlock(FabricBlockSettings.create().mapColor(MapColor.ORANGE).instrument(Instrument.SNARE).strength(0.5F).sounds(BlockSoundGroup.SAND).notSolid().ticksRandomly()
+            new LayeredSandBlock(AbstractBlock.Settings.create().mapColor(MapColor.ORANGE).instrument(Instrument.SNARE).strength(0.5F).sounds(BlockSoundGroup.SAND).notSolid().ticksRandomly()
                     .blockVision((state, world, pos) -> {return (Integer)state.get(SnowBlock.LAYERS) >= 8;})
                     .pistonBehavior(PistonBehavior.DESTROY)), ModItemGroup.MORE_LAYERED_BLOCKS);
     public static final Block LAYERED_GRAVEL = registerBlock("layered_gravel",
-            new LayeredGravelBlock(FabricBlockSettings.create().mapColor(MapColor.DIRT_BROWN).strength(0.5F).sounds(BlockSoundGroup.GRAVEL).notSolid().ticksRandomly()
+            new LayeredGravelBlock(AbstractBlock.Settings.create().mapColor(MapColor.DIRT_BROWN).strength(0.5F).sounds(BlockSoundGroup.GRAVEL).notSolid().ticksRandomly()
                     .blockVision((state, world, pos) -> {return (Integer)state.get(SnowBlock.LAYERS) >= 8;})
                     .pistonBehavior(PistonBehavior.DESTROY)), ModItemGroup.MORE_LAYERED_BLOCKS);
 
@@ -45,7 +45,7 @@ public class ModBlocks {
                     .pistonBehavior(PistonBehavior.DESTROY)), ModItemGroup.MORE_LAYERED_BLOCKS);*/
 
     public static final Block LAYERED_DIRT = registerBlock("layered_dirt",
-            new LayeredDirtBlock(FabricBlockSettings.create().mapColor(MapColor.DIRT_BROWN).strength(0.5F).sounds(BlockSoundGroup.GRAVEL).notSolid().ticksRandomly()
+            new LayeredDirtBlock(AbstractBlock.Settings.create().mapColor(MapColor.DIRT_BROWN).strength(0.5F).sounds(BlockSoundGroup.GRAVEL).notSolid().ticksRandomly()
                     .blockVision((state, world, pos) -> {return (Integer)state.get(SnowBlock.LAYERS) >= 8;})
                     .pistonBehavior(PistonBehavior.DESTROY)), ModItemGroup.MORE_LAYERED_BLOCKS);
 
@@ -64,7 +64,7 @@ public class ModBlocks {
     private static Item registerBlockItem(String name, Block block, RegistryKey<ItemGroup> group) {
 
         Item item = Registry.register(Registries.ITEM, new Identifier(MoreLayeredBlocks.MOD_ID, name),
-                new BlockItem(block, new FabricItemSettings()));
+                new BlockItem(block, new Item.Settings()));
         ItemGroupEvents.modifyEntriesEvent(group).register(entries -> entries.add(item));
         return item;
     }

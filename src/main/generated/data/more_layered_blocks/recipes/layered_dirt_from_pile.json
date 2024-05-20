@@ -10,7 +10,7 @@
     "###"
   ],
   "result": {
-    "item": "more_layered_blocks:layered_dirt"
-  },
-  "show_notification": true
+    "count": 1,
+    "id": "more_layered_blocks:layered_dirt"
+  }
 }

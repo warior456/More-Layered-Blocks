@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "more_layered_blocks:red_sand_pile"
-            ]
+            "items": "more_layered_blocks:red_sand_pile"
           }
         ]
       },
@@ -22,14 +20,13 @@
   },
   "requirements": [
     [
-      "has_red_sand_pile",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_red_sand_pile"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:red_sand"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

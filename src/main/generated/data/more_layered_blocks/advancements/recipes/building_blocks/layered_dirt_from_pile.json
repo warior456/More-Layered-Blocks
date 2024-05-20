@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "more_layered_blocks:dirt_pile"
-            ]
+            "items": "more_layered_blocks:dirt_pile"
           }
         ]
       },
@@ -22,14 +20,13 @@
   },
   "requirements": [
     [
-      "has_dirt_pile",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_dirt_pile"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:layered_dirt_from_pile"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }
