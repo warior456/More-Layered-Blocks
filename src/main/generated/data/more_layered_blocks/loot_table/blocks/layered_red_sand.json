@@ -187,7 +187,7 @@
                       "predicates": {
                         "minecraft:enchantments": [
                           {
-                            "enchantment": "minecraft:silk_touch",
+                            "enchantments": "minecraft:silk_touch",
                             "levels": {
                               "min": 1
                             }
@@ -344,23 +344,7 @@
                 },
                 {
                   "type": "minecraft:item",
-                  "conditions": [
-                    {
-                      "block": "more_layered_blocks:layered_red_sand",
-                      "condition": "minecraft:block_state_property",
-                      "properties": {
-                        "layers": "8"
-                      }
-                    }
-                  ],
-                  "functions": [
-                    {
-                      "add": false,
-                      "count": 8.0,
-                      "function": "minecraft:set_count"
-                    }
-                  ],
-                  "name": "more_layered_blocks:layered_red_sand"
+                  "name": "minecraft:red_sand"
                 }
               ]
             }

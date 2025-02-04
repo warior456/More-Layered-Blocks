@@ -7,7 +7,7 @@ import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.MapColor;
 import net.minecraft.block.SnowBlock;
-import net.minecraft.block.enums.Instrument;
+import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -26,12 +26,12 @@ import ugi.more_layered_blocks.item.ModItemGroup;
 public class ModBlocks {
 
     public static final Block LAYERED_SAND = registerBlock("layered_sand",
-            new LayeredSandBlock(AbstractBlock.Settings.create().mapColor(MapColor.PALE_YELLOW).instrument(Instrument.SNARE).strength(0.5F).sounds(BlockSoundGroup.SAND).notSolid().ticksRandomly()
+            new LayeredSandBlock(AbstractBlock.Settings.create().mapColor(MapColor.PALE_YELLOW).instrument(NoteBlockInstrument.SNARE).strength(0.5F).sounds(BlockSoundGroup.SAND).notSolid().ticksRandomly()
                     .blockVision((state, world, pos) -> {return (Integer)state.get(SnowBlock.LAYERS) >= 8;})
                     .pistonBehavior(PistonBehavior.DESTROY)), ModItemGroup.MORE_LAYERED_BLOCKS);
 
     public static final Block LAYERED_RED_SAND = registerBlock("layered_red_sand",
-            new LayeredSandBlock(AbstractBlock.Settings.create().mapColor(MapColor.ORANGE).instrument(Instrument.SNARE).strength(0.5F).sounds(BlockSoundGroup.SAND).notSolid().ticksRandomly()
+            new LayeredSandBlock(AbstractBlock.Settings.create().mapColor(MapColor.ORANGE).instrument(NoteBlockInstrument.SNARE).strength(0.5F).sounds(BlockSoundGroup.SAND).notSolid().ticksRandomly()
                     .blockVision((state, world, pos) -> {return (Integer)state.get(SnowBlock.LAYERS) >= 8;})
                     .pistonBehavior(PistonBehavior.DESTROY)), ModItemGroup.MORE_LAYERED_BLOCKS);
     public static final Block LAYERED_GRAVEL = registerBlock("layered_gravel",
@@ -53,17 +53,17 @@ public class ModBlocks {
 
     private static Block registerBlock(String name, Block block, RegistryKey<ItemGroup> group) {
         registerBlockItem(name, block, group);
-        return Registry.register(Registries.BLOCK, new Identifier(MoreLayeredBlocks.MOD_ID, name), block);
+        return Registry.register(Registries.BLOCK, MoreLayeredBlocks.identifier(name), block);
     }
 
 
     private static Block registerBlockWithoutBlockItem(String name, Block block, RegistryKey<ItemGroup> group) {
-        return Registry.register(Registries.BLOCK, new Identifier(MoreLayeredBlocks.MOD_ID, name), block);
+        return Registry.register(Registries.BLOCK, MoreLayeredBlocks.identifier(name), block);
     }
 
     private static Item registerBlockItem(String name, Block block, RegistryKey<ItemGroup> group) {
 
-        Item item = Registry.register(Registries.ITEM, new Identifier(MoreLayeredBlocks.MOD_ID, name),
+        Item item = Registry.register(Registries.ITEM, MoreLayeredBlocks.identifier(name),
                 new BlockItem(block, new Item.Settings()));
         ItemGroupEvents.modifyEntriesEvent(group).register(entries -> entries.add(item));
         return item;

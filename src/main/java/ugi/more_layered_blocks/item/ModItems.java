@@ -24,7 +24,7 @@ public class ModItems {
 
 
     private static Item registerItem(String name, Item item) {
-        return Registry.register(Registries.ITEM, new Identifier(MoreLayeredBlocks.MOD_ID, name), item);
+        return Registry.register(Registries.ITEM, MoreLayeredBlocks.identifier(name), item);
     }
 
 

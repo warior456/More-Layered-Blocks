@@ -21,7 +21,7 @@
                   "type": "minecraft:item",
                   "conditions": [
                     {
-                      "block": "more_layered_blocks:layered_sand",
+                      "block": "more_layered_blocks:layered_dirt",
                       "condition": "minecraft:block_state_property",
                       "properties": {
                         "layers": "1"
@@ -35,36 +35,16 @@
                       "function": "minecraft:set_count"
                     }
                   ],
-                  "name": "more_layered_blocks:sand_pile"
+                  "name": "more_layered_blocks:dirt_pile"
                 },
                 {
                   "type": "minecraft:item",
                   "conditions": [
                     {
-                      "block": "more_layered_blocks:layered_sand",
+                      "block": "more_layered_blocks:layered_dirt",
                       "condition": "minecraft:block_state_property",
                       "properties": {
                         "layers": "2"
-                      }
-                    }
-                  ],
-                  "functions": [
-                    {
-                      "add": false,
-                      "count": 2.0,
-                      "function": "minecraft:set_count"
-                    }
-                  ],
-                  "name": "more_layered_blocks:sand_pile"
-                },
-                {
-                  "type": "minecraft:item",
-                  "conditions": [
-                    {
-                      "block": "more_layered_blocks:layered_sand",
-                      "condition": "minecraft:block_state_property",
-                      "properties": {
-                        "layers": "3"
                       }
                     }
                   ],
@@ -75,16 +55,16 @@
                       "function": "minecraft:set_count"
                     }
                   ],
-                  "name": "more_layered_blocks:sand_pile"
+                  "name": "more_layered_blocks:dirt_pile"
                 },
                 {
                   "type": "minecraft:item",
                   "conditions": [
                     {
-                      "block": "more_layered_blocks:layered_sand",
+                      "block": "more_layered_blocks:layered_dirt",
                       "condition": "minecraft:block_state_property",
                       "properties": {
-                        "layers": "4"
+                        "layers": "3"
                       }
                     }
                   ],
@@ -95,36 +75,16 @@
                       "function": "minecraft:set_count"
                     }
                   ],
-                  "name": "more_layered_blocks:sand_pile"
+                  "name": "more_layered_blocks:dirt_pile"
                 },
                 {
                   "type": "minecraft:item",
                   "conditions": [
                     {
-                      "block": "more_layered_blocks:layered_sand",
+                      "block": "more_layered_blocks:layered_dirt",
                       "condition": "minecraft:block_state_property",
                       "properties": {
-                        "layers": "5"
-                      }
-                    }
-                  ],
-                  "functions": [
-                    {
-                      "add": false,
-                      "count": 5.0,
-                      "function": "minecraft:set_count"
-                    }
-                  ],
-                  "name": "more_layered_blocks:sand_pile"
-                },
-                {
-                  "type": "minecraft:item",
-                  "conditions": [
-                    {
-                      "block": "more_layered_blocks:layered_sand",
-                      "condition": "minecraft:block_state_property",
-                      "properties": {
-                        "layers": "6"
+                        "layers": "4"
                       }
                     }
                   ],
@@ -135,16 +95,16 @@
                       "function": "minecraft:set_count"
                     }
                   ],
-                  "name": "more_layered_blocks:sand_pile"
+                  "name": "more_layered_blocks:dirt_pile"
                 },
                 {
                   "type": "minecraft:item",
                   "conditions": [
                     {
-                      "block": "more_layered_blocks:layered_sand",
+                      "block": "more_layered_blocks:layered_dirt",
                       "condition": "minecraft:block_state_property",
                       "properties": {
-                        "layers": "7"
+                        "layers": "5"
                       }
                     }
                   ],
@@ -155,13 +115,53 @@
                       "function": "minecraft:set_count"
                     }
                   ],
-                  "name": "more_layered_blocks:sand_pile"
+                  "name": "more_layered_blocks:dirt_pile"
                 },
                 {
                   "type": "minecraft:item",
                   "conditions": [
                     {
-                      "block": "more_layered_blocks:layered_sand",
+                      "block": "more_layered_blocks:layered_dirt",
+                      "condition": "minecraft:block_state_property",
+                      "properties": {
+                        "layers": "6"
+                      }
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "add": false,
+                      "count": 9.0,
+                      "function": "minecraft:set_count"
+                    }
+                  ],
+                  "name": "more_layered_blocks:dirt_pile"
+                },
+                {
+                  "type": "minecraft:item",
+                  "conditions": [
+                    {
+                      "block": "more_layered_blocks:layered_dirt",
+                      "condition": "minecraft:block_state_property",
+                      "properties": {
+                        "layers": "7"
+                      }
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "add": false,
+                      "count": 10.0,
+                      "function": "minecraft:set_count"
+                    }
+                  ],
+                  "name": "more_layered_blocks:dirt_pile"
+                },
+                {
+                  "type": "minecraft:item",
+                  "conditions": [
+                    {
+                      "block": "more_layered_blocks:layered_dirt",
                       "condition": "minecraft:block_state_property",
                       "properties": {
                         "layers": "8"
@@ -171,11 +171,11 @@
                   "functions": [
                     {
                       "add": false,
-                      "count": 8.0,
+                      "count": 12.0,
                       "function": "minecraft:set_count"
                     }
                   ],
-                  "name": "more_layered_blocks:sand_pile"
+                  "name": "more_layered_blocks:dirt_pile"
                 }
               ],
               "conditions": [
@@ -187,7 +187,7 @@
                       "predicates": {
                         "minecraft:enchantments": [
                           {
-                            "enchantment": "minecraft:silk_touch",
+                            "enchantments": "minecraft:silk_touch",
                             "levels": {
                               "min": 1
                             }
@@ -206,10 +206,30 @@
                   "type": "minecraft:item",
                   "conditions": [
                     {
-                      "block": "more_layered_blocks:layered_sand",
+                      "block": "more_layered_blocks:layered_dirt",
                       "condition": "minecraft:block_state_property",
                       "properties": {
                         "layers": "1"
+                      }
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "add": false,
+                      "count": 0.0,
+                      "function": "minecraft:set_count"
+                    }
+                  ],
+                  "name": "more_layered_blocks:layered_dirt"
+                },
+                {
+                  "type": "minecraft:item",
+                  "conditions": [
+                    {
+                      "block": "more_layered_blocks:layered_dirt",
+                      "condition": "minecraft:block_state_property",
+                      "properties": {
+                        "layers": "2"
                       }
                     }
                   ],
@@ -220,16 +240,36 @@
                       "function": "minecraft:set_count"
                     }
                   ],
-                  "name": "more_layered_blocks:layered_sand"
+                  "name": "more_layered_blocks:layered_dirt"
                 },
                 {
                   "type": "minecraft:item",
                   "conditions": [
                     {
-                      "block": "more_layered_blocks:layered_sand",
+                      "block": "more_layered_blocks:layered_dirt",
                       "condition": "minecraft:block_state_property",
                       "properties": {
-                        "layers": "2"
+                        "layers": "3"
+                      }
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "add": false,
+                      "count": 1.0,
+                      "function": "minecraft:set_count"
+                    }
+                  ],
+                  "name": "more_layered_blocks:layered_dirt"
+                },
+                {
+                  "type": "minecraft:item",
+                  "conditions": [
+                    {
+                      "block": "more_layered_blocks:layered_dirt",
+                      "condition": "minecraft:block_state_property",
+                      "properties": {
+                        "layers": "4"
                       }
                     }
                   ],
@@ -240,16 +280,36 @@
                       "function": "minecraft:set_count"
                     }
                   ],
-                  "name": "more_layered_blocks:layered_sand"
+                  "name": "more_layered_blocks:layered_dirt"
                 },
                 {
                   "type": "minecraft:item",
                   "conditions": [
                     {
-                      "block": "more_layered_blocks:layered_sand",
+                      "block": "more_layered_blocks:layered_dirt",
                       "condition": "minecraft:block_state_property",
                       "properties": {
-                        "layers": "3"
+                        "layers": "5"
+                      }
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "add": false,
+                      "count": 2.0,
+                      "function": "minecraft:set_count"
+                    }
+                  ],
+                  "name": "more_layered_blocks:layered_dirt"
+                },
+                {
+                  "type": "minecraft:item",
+                  "conditions": [
+                    {
+                      "block": "more_layered_blocks:layered_dirt",
+                      "condition": "minecraft:block_state_property",
+                      "properties": {
+                        "layers": "6"
                       }
                     }
                   ],
@@ -260,73 +320,13 @@
                       "function": "minecraft:set_count"
                     }
                   ],
-                  "name": "more_layered_blocks:layered_sand"
+                  "name": "more_layered_blocks:layered_dirt"
                 },
                 {
                   "type": "minecraft:item",
                   "conditions": [
                     {
-                      "block": "more_layered_blocks:layered_sand",
-                      "condition": "minecraft:block_state_property",
-                      "properties": {
-                        "layers": "4"
-                      }
-                    }
-                  ],
-                  "functions": [
-                    {
-                      "add": false,
-                      "count": 4.0,
-                      "function": "minecraft:set_count"
-                    }
-                  ],
-                  "name": "more_layered_blocks:layered_sand"
-                },
-                {
-                  "type": "minecraft:item",
-                  "conditions": [
-                    {
-                      "block": "more_layered_blocks:layered_sand",
-                      "condition": "minecraft:block_state_property",
-                      "properties": {
-                        "layers": "5"
-                      }
-                    }
-                  ],
-                  "functions": [
-                    {
-                      "add": false,
-                      "count": 5.0,
-                      "function": "minecraft:set_count"
-                    }
-                  ],
-                  "name": "more_layered_blocks:layered_sand"
-                },
-                {
-                  "type": "minecraft:item",
-                  "conditions": [
-                    {
-                      "block": "more_layered_blocks:layered_sand",
-                      "condition": "minecraft:block_state_property",
-                      "properties": {
-                        "layers": "6"
-                      }
-                    }
-                  ],
-                  "functions": [
-                    {
-                      "add": false,
-                      "count": 6.0,
-                      "function": "minecraft:set_count"
-                    }
-                  ],
-                  "name": "more_layered_blocks:layered_sand"
-                },
-                {
-                  "type": "minecraft:item",
-                  "conditions": [
-                    {
-                      "block": "more_layered_blocks:layered_sand",
+                      "block": "more_layered_blocks:layered_dirt",
                       "condition": "minecraft:block_state_property",
                       "properties": {
                         "layers": "7"
@@ -336,31 +336,15 @@
                   "functions": [
                     {
                       "add": false,
-                      "count": 7.0,
+                      "count": 3.0,
                       "function": "minecraft:set_count"
                     }
                   ],
-                  "name": "more_layered_blocks:layered_sand"
+                  "name": "more_layered_blocks:layered_dirt"
                 },
                 {
                   "type": "minecraft:item",
-                  "conditions": [
-                    {
-                      "block": "more_layered_blocks:layered_sand",
-                      "condition": "minecraft:block_state_property",
-                      "properties": {
-                        "layers": "8"
-                      }
-                    }
-                  ],
-                  "functions": [
-                    {
-                      "add": false,
-                      "count": 8.0,
-                      "function": "minecraft:set_count"
-                    }
-                  ],
-                  "name": "more_layered_blocks:layered_sand"
+                  "name": "minecraft:dirt"
                 }
               ]
             }

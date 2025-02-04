@@ -13,7 +13,7 @@ import ugi.more_layered_blocks.MoreLayeredBlocks;
 import ugi.more_layered_blocks.block.ModBlocks;
 
 public class ModItemGroup {
-    public static final RegistryKey<ItemGroup> MORE_LAYERED_BLOCKS = RegistryKey.of(RegistryKeys.ITEM_GROUP, new Identifier(MoreLayeredBlocks.MOD_ID, "more_layered_blocks"));
+    public static final RegistryKey<ItemGroup> MORE_LAYERED_BLOCKS = RegistryKey.of(RegistryKeys.ITEM_GROUP, MoreLayeredBlocks.identifier("more_layered_blocks"));
 
     public static void registerItemgroups() {
 

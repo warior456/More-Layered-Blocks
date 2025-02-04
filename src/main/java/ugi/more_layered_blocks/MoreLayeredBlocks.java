@@ -2,6 +2,7 @@ package ugi.more_layered_blocks;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import ugi.more_layered_blocks.block.ModBlocks;
@@ -15,6 +16,10 @@ public class MoreLayeredBlocks implements ModInitializer {
     public static final Logger LOGGER = LoggerFactory.getLogger("more_layered_blocks");
 
 	public static final String MOD_ID = "more_layered_blocks";
+
+	public static Identifier identifier(String path) {
+		return Identifier.of(MoreLayeredBlocks.MOD_ID, path);
+	}
 
 	@Override
 	public void onInitialize() {
